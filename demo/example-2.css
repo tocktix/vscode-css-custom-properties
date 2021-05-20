@@ -1,0 +1,4 @@
+:root {
+  --prop: root-in-another-file;
+  content: var(--prop);
+}

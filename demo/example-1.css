@@ -1,0 +1,8 @@
+:root {
+  --prop: root-in-same-file;
+}
+
+.element {
+  --prop: override-in-selector;
+  content: var(--prop);
+}

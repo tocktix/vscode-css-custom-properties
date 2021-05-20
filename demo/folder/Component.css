@@ -1,0 +1,5 @@
+.component {
+  background: var(--theme-color-white);
+  color: var(--theme-color-black);
+  font-family: var(--theme-font);
+}

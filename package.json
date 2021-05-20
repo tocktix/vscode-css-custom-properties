@@ -1,0 +1,63 @@
+{
+  "name": "vscode-css-custom-properties",
+  "displayName": "CSS Custom Properties",
+  "description": "Making working with CSS custom properties a joy. CSS Custom Properties adds Intellisense, Definitions, and References for CSS custom properties across your workspace.",
+  "author": { "name": "Tock" },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Language Packs",
+    "Other"
+  ],
+  "keywords": [
+    "css custom properties", "css variables", "css intellisense"
+  ],
+  "activationEvents": [
+    "onLanguage:css",
+    "onLanguage:postcss",
+    "onLanguage:scss"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "title": "CSS Custom Properties",
+      "properties": {
+        "cssCustomProperties.files": {
+          "type": "array",
+          "description": "Array of files containing custom property declarations."
+        },
+        "cssCustomProperties.languages": {
+          "type": "array",
+          "description": "Array of languages to run on."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/css": "^0.0.31",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.56.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.19.0",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "css": "^3.0.0"
+  }
+}

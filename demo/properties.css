@@ -1,0 +1,21 @@
+:root {
+  --spacing: 8px;
+  --theme-font: Helvetica, sans-serif;
+  --theme-shadow: 2px var(--theme-shadow-offset-y) var(--theme-shadow-offset-y)
+    var(--theme-color-black);
+  --theme-shadow-offset-y: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-black: white;
+    --theme-color-white: black;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --theme-color-black: black;
+    --theme-color-white: white;
+  }
+}
