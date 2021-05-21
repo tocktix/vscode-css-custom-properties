@@ -19,9 +19,7 @@
     "css custom properties", "css variables", "css intellisense"
   ],
   "activationEvents": [
-    "onLanguage:css",
-    "onLanguage:postcss",
-    "onLanguage:scss"
+    "onLanguage:css"
   ],
   "main": "./out/extension.js",
   "contributes": {
