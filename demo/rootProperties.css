@@ -1,9 +1,12 @@
 :root {
-  --spacing: 8px;
-  --theme-font: Helvetica, sans-serif;
-  --theme-shadow: 2px var(--theme-shadow-offset-y) var(--theme-shadow-offset-y)
-    var(--theme-color-black);
-  --theme-shadow-offset-y: 4px;
+  --font: Helvetica, sans-serif;
+  --nav-height: 40px;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --nav-height: 60px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

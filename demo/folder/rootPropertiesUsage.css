@@ -1,0 +1,27 @@
+body {
+  background-color: var(--theme-color-white);
+  color: var(--theme-color-black);
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font);
+}
+
+nav {
+  height: var(--nav-height);
+}
+
+body.sticky-nav {
+  padding-top: var(--nav-height);
+}
+
+body.sticky-nav nav {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

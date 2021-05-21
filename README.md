@@ -31,7 +31,8 @@ This extension contributes the following settings:
 
 ## Known Issues
 
-Currently only working for the CSS file type.
+- Currently only working for the CSS file type.
+- File renaming causes issues and requires workspace reload.
 
 ## Release Notes
 

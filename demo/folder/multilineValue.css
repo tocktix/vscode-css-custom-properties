@@ -1,0 +1,23 @@
+.component {
+  --gradient-black: black;
+  --gradient-white: white;
+  --shadow-color: black;
+  --shadow-fade: 4px;
+  --shadow-offset-x: 4px;
+  --shadow-offset-y: 4px;
+  --shadow-spread: 4px;
+  --transition-easing: ease-in;
+  --transitioned-property: box-shadow;
+  background-image: linear-gradient(
+    var(--gradient-black) 0%,
+    var(--gradient-white) 50%,
+    var(--gradient-black) 100%
+  );
+  box-shadow: var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-fade)
+      var(--shadow-spread) var(--shadow-color),
+    var(--shadow-offset-x) calc(var(--shadow-offset-y) * -1) var(--shadow-fade)
+      calc(var(--shadow-spread) * 2) var(--shadow-color);
+  transition: var(--transitioned-property) 300ms
+      cubic-bezier(0.075, 0.82, 0.165, 1),
+    opacity 150ms var(--transition-easing);
+}

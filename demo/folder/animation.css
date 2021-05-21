@@ -1,0 +1,19 @@
+@keyframes test--animation {
+  from {
+    height: var(--factor);
+  }
+  to {
+    height: calc(var(--factor) * 2);
+  }
+}
+
+.component {
+  --easing: ease-in-out;
+  --duration: 300ms;
+  --factor: 8px;
+  /* 
+   * Naming the animation with -- in front _will_ treat it like a custom prop. 
+   * Keeping it inside the name is fine though.
+   */
+  animation: test--animation var(--duration) var(--easing);
+}
