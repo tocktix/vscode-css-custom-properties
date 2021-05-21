@@ -57,7 +57,12 @@ export default class CustomPropertyManager {
     const loadUrisPromises: Thenable<vscode.Uri[]>[] = [];
     fileGlobPatterns.forEach((fileGlobPattern) => {
       loadUrisPromises.push(vscode.workspace.findFiles(fileGlobPattern));
-      const watcher = vscode.workspace.createFileSystemWatcher(fileGlobPattern);
+      const watcher = vscode.workspace.createFileSystemWatcher(
+        fileGlobPattern,
+        false,
+        false,
+        false
+      );
       const onWatcherEvent = async (uri: vscode.Uri) => {
         await this.processUri(uri);
         this.processItems();
