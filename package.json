@@ -4,7 +4,7 @@
   "description": "Making working with CSS custom properties a joy. CSS Custom Properties adds Intellisense, Definitions, and References for CSS custom properties across your workspace.",
   "author": { "name": "Tock" },
   "publisher": "Tock",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "https://github.com/tocktix/vscode-css-custom-properties"
   },
