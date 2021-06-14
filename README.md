@@ -32,9 +32,3 @@ This extension contributes the following settings:
 ## Known Issues
 
 - Currently only working for the CSS file type.
-
-## Release Notes
-
-### 0.0.1 - 0.0.3
-
-Initial release!
