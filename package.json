@@ -1,6 +1,6 @@
 {
   "name": "vscode-css-custom-properties",
-  "icon": "./icon.png",
+  "icon": "icon.png",
   "displayName": "CSS Custom Properties",
   "description": "Making working with CSS custom properties a joy. CSS Custom Properties adds Intellisense, Definitions, and References for CSS custom properties across your workspace.",
   "author": { "name": "Tock" },
