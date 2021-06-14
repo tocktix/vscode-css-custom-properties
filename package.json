@@ -3,7 +3,9 @@
   "icon": "icon.png",
   "displayName": "CSS Custom Properties",
   "description": "Making working with CSS custom properties a joy. CSS Custom Properties adds Intellisense, Definitions, and References for CSS custom properties across your workspace.",
-  "author": { "name": "Tock" },
+  "author": {
+    "name": "Tock"
+  },
   "publisher": "Tock",
   "version": "0.0.3",
   "repository": {
@@ -18,7 +20,9 @@
     "Other"
   ],
   "keywords": [
-    "css custom properties", "css variables", "css intellisense"
+    "css custom properties",
+    "css variables",
+    "css intellisense"
   ],
   "activationEvents": [
     "onLanguage:css"
